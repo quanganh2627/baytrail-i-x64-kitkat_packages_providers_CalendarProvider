@@ -3130,7 +3130,6 @@ public class CalendarProvider2 extends SQLiteContentProvider implements OnAccoun
             }
             case REMINDERS:
             {
-                mCalendarAlarm.scheduleNextAlarm(false /* removeAlarms */);
                 return deleteReminders(uri, false, selection, selectionArgs, callerIsSyncAdapter);
             }
             case REMINDERS_ID:
